@@ -4,7 +4,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 require("./db");
-
+const hbs = require("hbs");
 const indexRouter = require("./routes/index");
 const presentsRouter = require("./routes/presents");
 
@@ -13,6 +13,7 @@ const app = express();
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
+hbs.registerPartials(path.join(__dirname, "views/partials"));
 
 app.use(logger("dev"));
 app.use(express.json());

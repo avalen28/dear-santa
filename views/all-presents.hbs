@@ -1,9 +1,6 @@
 <h1>Presents</h1>
 {{#each presentsFromDB}}
-  <h3>
-    {{name}}
-  </h3>
-  <img src="{{image}}" width="100px" alt="gift img" />
-  <br />
-  <a href="/presents/{{_id}}">See Details</a>
+
+    {{>presentinfo this}}
+
 {{/each}}
