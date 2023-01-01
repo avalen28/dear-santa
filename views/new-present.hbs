@@ -1,0 +1,19 @@
+<h1>Create a new present</h1>
+<form action="/presents/new" method="post">
+  <label>New present:</label>
+  <input type="text" name="name" />
+  <br />
+  <label>Image:</label>
+  <input type="text" name="image" />
+  <br />
+  <label>Price:</label>
+  <input type="number" name="price" required />
+  <br />
+  <label>Recipient:</label>
+  <input type="text" name="recipient" required />
+  <br />
+  <label>Description:</label>
+  <input type="text" name="description" />
+  <br />
+  <button type="submit">Submit!</button>
+</form>
