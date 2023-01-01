@@ -1,9 +1,10 @@
-<h3>
-  {{name}}
-</h3>
-<img src="{{image}}" width="100px" alt="gift img" />
-<br />
-<a href="/presents/{{_id}}">See Details</a>
-<form action="/presents/delete/{{_id}}" method="get">
-  <button type="submit">Delete this item</button>
-</form>
+<div class="present-card">
+  <h3>
+    {{name}}
+  </h3>
+  <img src="{{image}}" width="100px" alt="gift img" />
+  <a href="/presents/{{_id}}">See Details</a>
+  <form action="/presents/delete/{{_id}}" method="get">
+    <button type="submit">Delete this item</button>
+  </form>
+</div>

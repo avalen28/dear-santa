@@ -1,7 +1,13 @@
-<h1>Presents</h1>
-{{#each presentsFromDB}}
 
-    {{>presentinfo this}}
+<div id="container">
+    <h1>Presents</h1>
+    <div id="presents-all">
+         {{#each presentsFromDB}}
+     
+        {{>presentinfo this}}
+    
+        {{/each}}
+    </div>
 
-{{/each}}
-<a href="/presents/new">Create a new present</a>
+<a href="/presents/new">Create a new present</a>   
+</div>

@@ -4,5 +4,26 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#presents-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.present-card {
+  margin: 20px;
+  width: 25vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid black;
+  border-radius: 10px;
 }
